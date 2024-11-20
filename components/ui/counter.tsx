@@ -10,7 +10,7 @@ interface CounterProps {
 
 export const Counter = ({ end, duration = 2, suffix = '', className = '' }: CounterProps) => {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, threshold: 0.5 });
+  const inView = useInView(ref, { once: true, amount: 0.5 });
   const controls = useAnimation();
   const [count, setCount] = useState(0);
 
