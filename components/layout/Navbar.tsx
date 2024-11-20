@@ -68,8 +68,13 @@ const Navbar = () => {
               variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
+              className="p-2 hover:bg-gray-100 rounded-lg"
             >
-              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {isOpen ? (
+                <X className="w-7 h-7 text-gray-900" />
+              ) : (
+                <Menu className="w-7 h-7 text-gray-900" />
+              )}
             </Button>
           </div>
         </div>
